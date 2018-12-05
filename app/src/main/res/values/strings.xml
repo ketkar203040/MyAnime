@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">MyAnime</string>
+
+    <!-- Label for overflow menu option that inserts fake pet data into the app [CHAR LIMIT=20] -->
+    <string name="action_insert_dummy_data">Insert Dummy Data</string>
+
+    <!-- Label for overflow menu option that deletes all pet data in the app [CHAR LIMIT=20] -->
+    <string name="action_delete_all_entries">Delete All Pets</string>
+
+    <string name="progress_text">Progress: \t</string>
+
+    <string name="progress_button_text">Progress</string>
+
+    <string name="status_text">Status:\t</string>
+
+    <string name="status_editor_text">Status</string>
+
+    <string name="total_text">Total: \t</string>
+
+    <string name="button_text">+1</string>
+
+    <!--Status Strings-->
+    <string name="status_watching">Watching</string>
+    <string name="status_completed">Completed</string>
+    <string name="status_plan_to_watch">Plan to Watch</string>
+
+    <!-- Label for overview category of attributes in the editor [CHAR LIMIT=30] -->
+    <string name="category_overview">Overview</string>
+
+    <string name="hint_title_example">Ex: Erased</string>
+
+    <string name="edit_anime_label">Edit Anime</string>
+
+    <string name="add_anime_label">Add Anime</string>
+
+    <!-- Label for editor menu option to save anime and leave editor [CHAR LIMIT=20] -->
+    <string name="action_save">Save</string>
+
+    <!-- Label for editor overflow menu option that deletes the current anime [CHAR LIMIT=20] -->
+    <string name="action_delete">Delete</string>
+
+    <!-- Title for the activity to add a new anime [CHAR LIMIT=20] -->
+    <string name="editor_activity_title_new_anime">Add Anime</string>
+    <string name="editor_activity_title_edit_anime">Edit Anime</string>
+
+    <string name="set_string">Set</string>
+    <string name="cancel_string">Cancel</string>
+
+    <string name="editor_insert_anime_failed">Failed to insert the Anime</string>
+    <string name="editor_insert_anime_successful">Successfully inserted new Anime</string>
+    <string name="editor_update_anime_successful">Successfully updated Anime</string>
+    <string name="editor_update_anime_failed">Failed to update Anime</string>
+
+    <string name="editor_add_image">Add Image</string>
+    <string name="click_here">Click Here</string>
+    <string name="number_zero">0</string>
+    <string name="insert_title">Insert Title</string>
+</resources>

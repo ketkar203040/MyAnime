@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.myanime.EditorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/editor_add_image"
+            android:textAppearance="@style/EditorTextStyle" />
+
+        <!--Add Image-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="18sp"
+                android:text="@string/click_here"/>
+
+            <ImageView
+                android:id="@+id/add_image_view"
+                android:layout_width="210dp"
+                android:layout_height="315dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="16dp"
+               />
+
+        </RelativeLayout>
+
+        <!-- Title field -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/insert_title"
+            android:paddingStart="16dp"
+            android:paddingTop="16dp"
+            android:textAppearance="@style/EditorTextStyle"/>
+
+        <EditText
+            android:id="@+id/edit_title_name"
+            android:hint="@string/hint_title_example"
+            android:inputType="textCapWords"
+            android:layout_margin="16dp"
+            style="@style/EditorFieldStyle" />
+
+        <RelativeLayout
+            android:id="@+id/total_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/total_heading_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:labelFor="@+id/total_editor_view"
+                android:text="@string/total_text"
+                android:textAppearance="@style/EditorTextStyle"/>
+
+            <EditText
+                android:id="@+id/total_editor_view"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:layout_toEndOf="@id/total_heading_text"
+                android:paddingTop="16dp"
+                android:layout_marginStart="16dp"
+                android:inputType="number"
+                tools:text="19"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/progress_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/progress_heading_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="@string/progress_text"
+                android:textAppearance="@style/EditorTextStyle"/>
+
+            <TextView
+                android:id="@+id/progress_editor_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/progress_heading_text"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:text="@string/number_zero"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:labelFor="@id/spinner_status"
+                android:text="@string/status_text"
+                android:textAppearance="@style/EditorTextStyle"
+                />
+
+            <!-- Input field -->
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:paddingTop="6dp">
+
+                <!-- status drop-down spinner -->
+                <Spinner
+                    android:id="@+id/spinner_status"
+                    android:layout_height="48dp"
+                    android:layout_width="wrap_content"
+                    android:spinnerMode="dropdown"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+
